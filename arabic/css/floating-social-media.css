@@ -1,0 +1,167 @@
+/*
+ * Container - Button
+ */
+.float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    left: 40px;
+    background-color: #00652e;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+   
+    z-index: 1000;
+    animation: bot-to-top 2s ease-out;
+}
+
+/*
+ * Submenu - Buttons
+ */
+
+.float:hover,
+.float:active {
+    background-color: #927f2e !important;
+}
+
+.floatingli .links {
+    align-items: center;
+    justify-content: center;
+    display: flex !important;
+
+}
+
+.floatingli .links p {
+    color: #000 !important;
+}
+
+.floatingul li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+
+.floatingul li .links :hover {
+    transform: scale(1.02);
+    transition: 0.5s;
+    cursor: pointer;
+
+}
+
+
+.floatingul li .links :hover~#float {
+    background-color: #927f2e;
+}
+
+.floatingul {
+    position: fixed;
+    left: 40px;
+    padding-bottom: 10px;
+    bottom: 80px;
+    z-index: 9999;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    align-items: start;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 10px 20px;
+    width: 300px;
+    border-radius: 30px;
+}
+
+.wt {
+    max-width: 40px;
+    max-height: 40px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.flhead {
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 0px;
+}
+
+.fletext {
+    font-size: 13px;
+    margin-bottom: 0px;
+    color: #999;
+}
+
+/* Hidden Buttons */
+a.float+.floatingul {
+    visibility: hidden;
+}
+
+/* Visible Buttons */
+a.float:hover+.floatingul {
+    visibility: visible;
+    animation: scale-in 0.5s;
+}
+
+.floatingul:hover {
+    visibility: visible !important;
+
+}
+
+/* Center icons */
+a i.icon {
+    font-size: 24px;
+    margin-top: 18px;
+}
+
+/*
+ * Animations
+ */
+a.float i {
+    animation: rotate-in 0.5s;
+}
+
+a.float:hover>i {
+    animation: rotate-out 0.5s;
+}
+
+@keyframes bot-to-top {
+    0% {
+        bottom: -60px
+    }
+
+    50% {
+        bottom: 40px
+    }
+}
+
+@keyframes scale-in {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes rotate-in {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes rotate-out {
+    from {
+        transform: rotate(180deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}

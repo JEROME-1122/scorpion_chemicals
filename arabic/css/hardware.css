@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, Sans-serif;
+}
+
+/* .maincontsec {
+    margin-top: 80px;
+} */
+
+.Bahanisbannerimg {
+    max-width: 100%;
+    max-height: 100%;
+    margin-bottom: 50px;
+}
+
+.bahanisimg1 {
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+.bahanisimg1 {
+    margin-bottom: 50px;
+}
+
+.cols {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+
+.conthead {
+    font-size: 30px;
+}
+
+.context {
+    border-left: 5px solid #EE0000;
+    padding-left: 15px;
+    margin: 20px 0px;
+}
+
+.maincontsec2 {
+    margin-top: 30px;
+}
+
+.textsec {
+    border-left: 5px solid #EE0000;
+    padding-left: 15px;
+}
+
+.maincontsec3bg {
+    padding: 40px 60px;
+    background-color: #DDDDDD;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 30px;
+    margin-top: 50px;
+}
+
+.cont3text {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+p {
+    font-size: 14px;
+}
+
+.mbl {
+    display: none;
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+    .conthead {
+        font-size: 20px;
+    }
+
+    .contsec {
+        margin-bottom: 50px;
+    }
+
+}
+
+@media screen and (max-width:767px) {
+    .Bahanisbannerimg {
+        margin-bottom: 30px;
+    }
+
+    .conthead {
+        font-size: 20px;
+    }
+
+    .contsec .btn-danger {
+        font-size: 13px;
+    }
+
+    .desk {
+        display: none;
+    }
+
+    .mbl {
+        display: block;
+
+    }
+
+    .bahanisimg1 {
+        margin: 30px 0px 40px 0px !important;
+    }
+
+    .maincontsec3bg {
+        padding: 30px;
+    }
+
+    .cont3text {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .bhimg {
+        max-width: 50%;
+    }
+}
