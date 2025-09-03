@@ -1,0 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+
+.privacysec ul li {
+    list-style-type: disc !important;
+}
